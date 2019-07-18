@@ -3,8 +3,12 @@ import React, { useState, useEffect } from "react";
     return (
         <div> 
         <form onSubmit={addPerson}>
-        <p> Name: <input value={newName} onChange={nameChangeHandler} /></p>
-        <p> Number: <input value={newNumber} onChange={numberChangeHandler} /></p> 
+        Name: <input 
+        value={newName} 
+        onChange={nameChangeHandler} />
+        Number: <input 
+        value={newNumber} 
+        onChange={numberChangeHandler} />
         <div>
           <button type="submit">Add</button>
         </div>
